@@ -8,4 +8,4 @@
         <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Contacs</a>
     </nav>
     <a class="btn btn-outline-primary" href="#">Sign in</a>
- </div>   
+ </div>
