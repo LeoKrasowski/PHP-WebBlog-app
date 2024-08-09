@@ -1,0 +1,14 @@
+.col {
+    width: 32%;
+    margin-left: 1%;
+}
+.img-thumnail {
+    object-fit: cover;
+    width: 70%;
+    height: 70%;
+    border-radius: 20%;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
