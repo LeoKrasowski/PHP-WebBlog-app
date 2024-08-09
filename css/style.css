@@ -2,6 +2,7 @@
     width: 32%;
     margin-left: 1%;
 }
+
 .img-thumnail {
     object-fit: cover;
     width: 70%;
@@ -12,6 +13,16 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .mb-2 {
     border-radius: 33%;
+}
+
+.list-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.w-100 {
+    margin-top: 15px;
 }

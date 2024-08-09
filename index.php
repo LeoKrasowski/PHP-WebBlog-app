@@ -23,10 +23,10 @@
           </div>
           <div class="card-body">
             <img src="img/<?php echo ($i + 1) ?>.jpg" class="img-thumnail">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
+              <li class="list-item">10 users included</li>
+              <li class="list-item">2 GB of storage</li>
+              <li class="list-item">Email support</li>
+              <li class="list-item">Help center access</li>
             </ul>
             <button type="button" class="w-100 btn btn-lg btn-outline-primary">Details</button>
           </div>
