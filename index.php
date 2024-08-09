@@ -28,7 +28,9 @@
               <li class="list-item">Ullamcorper porttitor senectus erat ornare</li>
               <li class="list-item">Himenaeos proin praesent parturient pellentesque; consectetuer adipiscing elit.</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Details</button>
+            <a class="btn-detail" href="/detail.php">
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary ">Details</button>
+            </a>
           </div>
         </div>
       </div>
