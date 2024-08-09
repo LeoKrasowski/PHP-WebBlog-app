@@ -5,7 +5,7 @@
       </a>
     <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
         <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/">Main</a>
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/about">Contacs</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="/about.php">Contacs</a>
     </nav>
     <?php
         if (isset($_COOKIE['user']) && $_COOKIE['user'] == 'True'): // If $_COOKIE['user'] is not set, trying to access it directly will trigger a "Undefined index" notice in PHP. To avoid this, you should check if the cookie is set before comparing its value.
