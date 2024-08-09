@@ -8,25 +8,14 @@
     <title>PHP Web page</title>
 </head>
 <body>
-<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-      <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Website</title><path fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-        <span class="fs-4">Website example</span>
-      </a>
+    <?php require "blocks/header.php" ?>
 
-      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Main</a>
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Contacs</a>
-      </nav>
-      <a class="btn btn-outline-primary" href="#">Sign in</a>
-</div>
 <footer class="container pt-4 my-md-5 pt-md-5 border-top">
     <div class="row">
       <div class="col-12 col-md">
-        <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
         <small class="d-block mb-3 text-body-secondary">© 2017–2024</small>
-      </div>
-      <div class="col-6 col-md">
+    </div>
+    <div class="col-6 col-md">
         <h5>Features</h5>
         <ul class="list-unstyled text-small">
           <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
@@ -36,8 +25,8 @@
           <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
           <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
         </ul>
-      </div>
-      <div class="col-6 col-md">
+    </div>
+    <div class="col-6 col-md">
         <h5>Resources</h5>
         <ul class="list-unstyled text-small">
           <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
@@ -45,8 +34,8 @@
           <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
           <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
         </ul>
-      </div>
-      <div class="col-6 col-md">
+    </div>
+    <div class="col-6 col-md">
         <h5>About</h5>
         <ul class="list-unstyled text-small">
           <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
@@ -54,7 +43,7 @@
           <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
           <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
         </ul>
-      </div>
+    </div>
     </div>
   </footer>
 </body>
