@@ -7,5 +7,11 @@
         <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Main</a>
         <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="#">Contacs</a>
     </nav>
-    <a class="btn btn-outline-primary" href="#">Sign in</a>
+    <?php
+        if (isset($_COOKIE['user']) && $_COOKIE['user'] == 'True'): // If $_COOKIE['user'] is not set, trying to access it directly will trigger a "Undefined index" notice in PHP. To avoid this, you should check if the cookie is set before comparing its value.
+    ?>
+    <a class="btn btn-outline-primary" href="/auth.php">Account</a>
+    <?php else: ?>
+    <a class="btn btn-outline-primary" href="/auth.php">Sign in</a>
+    <?php endif; ?>
  </div>
