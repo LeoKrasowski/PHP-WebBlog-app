@@ -1,0 +1,4 @@
+AddDefaultCharset UTF-8
+
+RewriteRule ^about?$ about.php [NC, L]
+
