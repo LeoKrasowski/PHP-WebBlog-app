@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <title>PHP Web page</title>
+    <title>Publications</title>
 </head>
 <body>
     <?php require "blocks/header.php" ?>
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Dashboard</h1>
+        <h1 class="h2">Publications</h1>
         
-      <div class="section"><h3>Section title</h3></div>
-
       <div class="table-responsive small">
         <table class="table table-striped table-sm">
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">title</th>
-              <th scope="col">title</th>
-              <th scope="col">title</th>
-              <th scope="col">title</th>
+              <th scope="col">ID</th>
+              <th scope="col">Title</th>
+              <th scope="col">Author</th>
+              <th scope="col">Description</th>
+              <th scope="col">Publisher</th>
+              <th scope="col">Year</th>
             </tr>
           </thead>
           <tbody>
@@ -90,41 +89,7 @@
               <td>Design</td>
               <td>Format</td>
             </tr>
-            <tr>
-              <td>1,010</td>
-              <td>enrich</td>
-                <td>Incandescent</td>
-                <td>Design</td>
-                <td>Format</td>
-            </tr>
-            <tr>
-              <td>1,012</td>
-              <td>enrich</td>
-                <td>Incandescent</td>
-                <td>Design</td>
-                <td>Format</td>
-            </tr>
-            <tr>
-              <td>1,013</td>
-              <td>enrich</td>
-                <td>Incandescent</td>
-                <td>Design</td>
-                <td>Format</td>
-            </tr>
-            <tr>
-              <td>1,014</td>
-              <td>enrich</td>
-                <td>Incandescent</td>
-                <td>Design</td>
-                <td>Format</td>
-            </tr>
-            <tr>
-              <td>1,015</td>
-              <td>enrich</td>
-                <td>Incandescent</td>
-                <td>Design</td>
-                <td>Format</td>
-            </tr>
+            
           </tbody>
         </table>
       </div>
