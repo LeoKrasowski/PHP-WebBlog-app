@@ -36,14 +36,24 @@
         $publications = mysqli_fetch_all($publications);
         foreach ($publications as $publication) {
             ?>
+              <tr>
+                <?php foreach ($publication as $key => $value): ?>
+                    <td><a href="update.php?id=<?= $key ?>"><?= $value ?></a></td>
+                <?php endforeach; ?>
+                <td><a href="update.php?id=<?= $publication[0] ?>">Edit</a></td>
+              </tr>
 
-            <tr>
+
+            <!--<tr>
+              
               <td><?= $publication[0] ?></td>
               <td><?= $publication[1]?></td>
               <td><?= $publication[2] ?></td>
               <td><?= $publication[3] ?></td>
               <td><?= $publication[4] ?></td>
               <td><?= $publication[5] ?></td>
+              <td><a href="update.php?id=<?= $publication[0] ?>">Edit</a></td>
+            </tr>-->
           <?php
         }
          ?>

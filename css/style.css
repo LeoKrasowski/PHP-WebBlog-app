@@ -153,3 +153,11 @@ form button[type="submit"]:hover {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+
+td a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit;        /* Makes the link inherit the color of the parent element */
+    display: block;        /* Makes the entire cell clickable */
+    width: 100%;           /* Ensures the clickable area covers the full width of the cell */
+    height: 100%;          /* Ensures the clickable area covers the full height of the cell */
+}
