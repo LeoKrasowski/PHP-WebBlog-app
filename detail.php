@@ -49,27 +49,46 @@
          ?>
       </table>
       
+      <button type="button" class="collapsible">Add a new publications here ↕ </button>
+      <div class="content">
+        <form action="" method="post">
+            <h4 class="title-form">New Publication</h4>
+          
+            <p class="li-form">Title</p>
+            <input type="text" name="title">
             
-      <form action="" method="post">
-      <h4 class="title-form">Add New Publication</h4>
-          <p class="li-form">Title</p>
-          <input type="text" name="title">
+            <p class="li-form">Author</p>
+            <input type="text" name="author">
+            
+            <p class="li-form">Description</p>
+            <textarea name="description"></textarea>
+            
+            <p class="li-form">Publisher</p>
+            <input type="text" name="publisher">
+            
+            <p class="li-form">Year</p>
+            <input type="text" name="year">
           
-          <p class="li-form">Author</p>
-          <input type="text" name="author">
-          
-          <p class="li-form">Description</p>
-          <textarea name="description"></textarea>
-          
-          <p class="li-form">Publisher</p>
-          <input type="text" name="publisher">
-          
-          <p class="li-form">Year</p>
-          <input type="text" name="year">
-          
-          <button type="submit" class="btn-submit">New publication</button>
-      </form>  
-    </div>
+          <button type="submit" class="btn-submit">Add</button>
+          </form>  
+        </div>
+      </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var coll = document.querySelectorAll(".collapsible");
+        coll.forEach(function (button) {
+            button.addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    });
+</script>
   </main>
         
     <?php require "blocks/footer.php" ?>

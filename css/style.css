@@ -124,3 +124,27 @@ form button[type="submit"]:hover {
     margin: 0 0 -10px 0;
     font-weight: bold;
 }
+
+.collapsible {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.content {
+    padding: 0 15px;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
