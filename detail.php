@@ -48,20 +48,27 @@
         }
          ?>
       </table>
-      <h3>Add new publication</h3>
+      
+            
       <form action="" method="post">
-          <p>Title</p>
+      <h4 class="title-form">Add New Publication</h4>
+          <p class="li-form">Title</p>
           <input type="text" name="title">
-          <p>Author</p>
+          
+          <p class="li-form">Author</p>
           <input type="text" name="author">
-          <p>Description</p>
+          
+          <p class="li-form">Description</p>
           <textarea name="description"></textarea>
-          <p>Publisher</p>
+          
+          <p class="li-form">Publisher</p>
           <input type="text" name="publisher">
-          <p>Year</p>
+          
+          <p class="li-form">Year</p>
           <input type="text" name="year">
-          <button type="submit">Add new</button>
-        </form>  
+          
+          <button type="submit" class="btn-submit">New publication</button>
+      </form>  
     </div>
   </main>
         
