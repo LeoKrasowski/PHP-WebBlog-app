@@ -44,19 +44,26 @@
               <td><?= $publication[3] ?></td>
               <td><?= $publication[4] ?></td>
               <td><?= $publication[5] ?></td>
-
           <?php
         }
+         ?>
+      </table>
+      <h3>Add new publication</h3>
+      <form action="" method="post">
+          <p>Title</p>
+          <input type="text" name="title">
+          <p>Author</p>
+          <input type="text" name="author">
+          <p>Description</p>
+          <textarea name="description"></textarea>
+          <p>Publisher</p>
+          <input type="text" name="publisher">
+          <p>Year</p>
+          <input type="text" name="year">
+          <button type="submit">Add new</button>
+        </form>  
+    </div>
+  </main>
         
-        
-        
-        
-      ?>
-          
-         
-        </table>
-      </div>
-    </main>
-
     <?php require "blocks/footer.php" ?>
 </body>
