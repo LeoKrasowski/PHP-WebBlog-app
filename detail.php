@@ -1,5 +1,5 @@
 <?php
-  require_once 'connect.php'; 
+  require_once 'config/connect.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,9 +49,9 @@
          ?>
       </table>
       
-      <button type="button" class="collapsible">Add a new publications here ↕ </button>
+      <button type="button" class="collapsible">Click to add a new publication</button>
       <div class="content">
-        <form action="" method="post">
+        <form action="vendor/create.php" method="post">
             <h4 class="title-form">New Publication</h4>
           
             <p class="li-form">Title</p>
