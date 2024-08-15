@@ -1,5 +1,5 @@
 <?php
-  require_once 'config/connect.php';
+  require 'connect.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

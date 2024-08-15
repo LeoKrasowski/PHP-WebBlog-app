@@ -1,3 +1,13 @@
+<?php
+
+    require_once 'connect.php';
+
+    $publication_id = $_GET['id'];
+    $publication = mysqli_query($connect, "SELECT * FROM `publications` WHERE `id` = '$publication_id'");
+    $publication = mysqli_fetch_assoc($publication);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +19,16 @@
       <div class="content">
         <form action="vendor/create.php" method="post">
             <h4 class="title-form">Edit</h4>
-          
             <p class="li-form">Title</p>
-            <input type="text" name="title">
-            
+            <input type="text" name="title" value="<?= $publication['title'] ?>">
             <p class="li-form">Author</p>
-            <input type="text" name="author">
-            
+            <input type="text" name="author" value="<?= $publication['author'] ?>">
             <p class="li-form">Description</p>
-            <textarea name="description"></textarea>
-            
+            <textarea name="description"> <?= $publication['description'] ?></textarea>
             <p class="li-form">Publisher</p>
-            <input type="text" name="publisher">
-            
+            <input type="text" name="publisher" value="<?= $publication['publisher'] ?>">
             <p class="li-form">Year</p>
-            <input type="text" name="year">
-          
+            <input type="text" name="year" value="<?= $publication['year'] ?>">
           <button type="submit" class="btn-submit">Submit</button>
           </form>  
         </div>

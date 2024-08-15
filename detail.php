@@ -1,5 +1,5 @@
 <?php
-  require_once 'config/connect.php'; 
+  require_once 'connect.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,9 +31,13 @@
               </tr>
             </thead>
 
+
+
+          <tbody>
         <?php
         $publications = mysqli_query($connect, "SELECT * FROM `publications`");
         $publications = mysqli_fetch_all($publications);
+        
         foreach ($publications as $publication) {
             ?>
             
@@ -44,11 +48,12 @@
               <td><?= $publication[3] ?></td>
               <td><?= $publication[4] ?></td>
               <td><?= $publication[5] ?></td>
-              <td><a href="update.php?id=<?= $publication[0] ?>">Edit</a></td>
+              <td><a href="update.php?id=<?=$publication[0]?>">Edit</a></td>
             </tr>
           <?php
         }
          ?>
+         </tbody>
       </table>
       
       <button type="button" class="collapsible">Click to add a new publication</button>
@@ -57,19 +62,19 @@
             <h4 class="title-form">New Publication</h4>
           
             <p class="li-form">Title</p>
-            <input type="text" name="title">
+            <input type="text" name="title" required>
             
             <p class="li-form">Author</p>
-            <input type="text" name="author">
+            <input type="text" name="author" required>
             
             <p class="li-form">Description</p>
             <textarea name="description"></textarea>
             
             <p class="li-form">Publisher</p>
-            <input type="text" name="publisher">
+            <input type="text" name="publisher" required>
             
             <p class="li-form">Year</p>
-            <input type="text" name="year">
+            <input type="text" name="year" required>
           
           <button type="submit" class="btn-submit">Add</button>
           </form>  
