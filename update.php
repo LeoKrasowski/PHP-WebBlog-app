@@ -18,6 +18,7 @@
     <button type="button" class="collapsible">Edit publication</button>
       <div class="content">
         <form action="vendor/create.php" method="post">
+        <input type="hidden" name="id" value="<?= $publication['id'] ?>">
             <h4 class="title-form">Edit</h4>
             <p class="li-form">Title</p>
             <input type="text" name="title" value="<?= $publication['title'] ?>">
