@@ -16,10 +16,27 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Edit publication</title>
 
-    <button style="color: black; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; font-size: 16px;" onclick="goBack()"><</button>
+    <button 
+            id="dynamicButton"
+            style="color: black; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; font-size: 16px;" 
+            onmouseover="hoverIn(this)"
+            onmouseout="hoverOut(this)"
+            onclick="goBack()">
+            <
+        </button>
     <script>
       function goBack() {
         window.history.back();
+      }
+
+      function hoverIn(button) {
+        button.style.backgroundColor = '#b3e6ff'; // Change background color on hover
+        button.style.transform = 'scale(1.05)';    // Scale up slightly on hover
+      }
+
+      function hoverOut(button) {
+        button.style.backgroundColor = '#eaeaea'; // Revert background color
+        button.style.transform = 'scale(1)';       // Revert scale
       }
     </script>
 

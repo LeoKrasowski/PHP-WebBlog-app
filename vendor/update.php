@@ -23,11 +23,20 @@ header('Location: /');
         <link rel="stylesheet" href="/css/style.css">
         <title>Edit publication</title>
 
-        <button style="color: black; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; font-size: 16px;" onclick="goBack()"><</button>
+
+        <button 
+            id="dynamicButton"
+            style="color: black; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; font-size: 16px;" 
+            onmouseover="hoverIn(this)"
+            onmouseout="hoverOut(this)"
+            onclick="goBack()">
+            <
+        </button>
     <script>
       function goBack() {
         window.history.back();
       }
+
     </script>
 
         <H2 style="color: grey; font-size: 24px; font-family: Arial, sans-serif; text-align: center;">Publication</H2>
