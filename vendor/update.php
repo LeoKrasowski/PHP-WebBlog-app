@@ -22,8 +22,8 @@ header('Location: /');
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/style.css">
         <title>Edit publication</title>
-        <button type="button" class="collapsible"> publication</button>
-          <div class="content">
+        <H2 style="color: grey; font-size: 24px; font-family: Arial, sans-serif; text-align: center;">Publication</H2>
+          <div>
             <form action="vendor/update.php" method="post">
                 <h4 class="title-form">Edit</h4>
                 <p class="li-form">Title</p>
@@ -40,22 +40,7 @@ header('Location: /');
               </form>  
             </div>
           </div>
-          <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var coll = document.querySelectorAll(".collapsible");
-            coll.forEach(function (button) {
-                button.addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
-                });
-            });
-        });
-    </script>  
+          
     </head>
     <body>
         
