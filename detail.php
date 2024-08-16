@@ -49,6 +49,7 @@
               <td><?= $publication[4] ?></td>
               <td><?= $publication[5] ?></td>
               <td><a href="update.php?id=<?=$publication[0]?>">Edit</a></td>
+              <td><a style="color: red;" href="vendor/delete.php?id=<?=$publication[0]?>">Delete</a></td>
             </tr>
           <?php
         }
