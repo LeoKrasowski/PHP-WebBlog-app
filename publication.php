@@ -18,6 +18,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <button style="color: black; padding: 5px 10px; border: 1px solid #ccc; border-radius: 5px; cursor: pointer; font-size: 16px;" onclick="goBack()"><</button>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+
 </head>
 <body>
     <h4>Title <?= $publication['title']?></h4>
