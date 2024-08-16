@@ -28,6 +28,7 @@
                 <th scope="col" class="header-cell">Description</th>
                 <th scope="col" class="header-cell">Publisher</th>
                 <th scope="col" class="header-cell">Year</th>
+                <th scope="col" class="header-cell"></th>
               </tr>
             </thead>
 
@@ -48,9 +49,19 @@
               <td><?= $publication[3] ?></td>
               <td><?= $publication[4] ?></td>
               <td><?= $publication[5] ?></td>
-              <td><a href="publication.php?id=<?=$publication[0]?>">View</a></td>
-              <td><a href="update.php?id=<?=$publication[0]?>">Edit</a></td>
-              <td><a style="color: red;" href="vendor/delete.php?id=<?=$publication[0]?>">Delete</a></td>
+              <td>
+               <div style="display: flex; flex-direction: column; row-gap: 5px;">
+                <a href="publication.php?id=<?=$publication[0]?>" style="text-align: center; color: gray;background-color: #F4FBF4; padding: 2px 2px 2px 2px; border-radius: 5px; margin-left: 10px; padding-bottom: 5px; transition: transform 0.3s;"
+                 onmouseover="this.style.transform='scale(1.2)';"
+                 onmouseout="this.style.transform='scale(1)';">View</a>
+                <a href="update.php?id=<?=$publication[0]?>" style="text-align: center; color: gray;background-color: #ebf0fa; padding: 2px 2px 2px 2px; border-radius: 5px; margin-left: 10px; padding-bottom: 5px; transition: transform 0.3s;"
+                 onmouseover="this.style.transform='scale(1.2)';"
+                 onmouseout="this.style.transform='scale(1)';">Edit</a>
+                <a href="vendor/delete.php?id=<?=$publication[0]?>" style="text-align: center; color: #ff6666; background-color: #ffebe6; padding: 2px 2px 2px 2px; border-radius: 5px; margin-left: 10px; padding-bottom: 5px; margin-top 8px; transition: transform 0.3s;"
+                onmouseover="this.style.transform='scale(1.2)';" 
+                onmouseout="this.style.transform='scale(1)';">Delete</a>
+                </div>
+              </td>
             </tr>
           <?php
         }
